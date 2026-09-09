@@ -1,0 +1,6 @@
+{
+  "name": "Ecomanza",
+  "description": "Ecomanza · Productos de aseo sostenibles con diseño minimalista, catálogo esencial y bandeja lateral.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
