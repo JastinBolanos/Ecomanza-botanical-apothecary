@@ -21,7 +21,11 @@ import { NotFoundPage } from './pages/NotFoundPage';
 export default function App() {
   const [showWelcome, setShowWelcome] = useState(() => {
     try {
-      return !sessionStorage.getItem('ecomanza_welcomed');
+      // Check query param or session storage v2
+      if (typeof window !== 'undefined' && window.location.search.includes('welcome')) {
+        return true;
+      }
+      return !sessionStorage.getItem('ecomanza_welcomed_v2');
     } catch {
       return true;
     }
@@ -30,7 +34,7 @@ export default function App() {
   const handleDismissWelcome = () => {
     setShowWelcome(false);
     try {
-      sessionStorage.setItem('ecomanza_welcomed', 'true');
+      sessionStorage.setItem('ecomanza_welcomed_v2', 'true');
     } catch {
       // ignore
     }
