@@ -1,17 +1,32 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { EcomanzaLogo } from './EcomanzaLogo';
+import { useWelcome } from '../context/WelcomeContext';
 
 export const Footer: React.FC = () => {
+  const navigate = useNavigate();
+  const { openWelcome } = useWelcome();
+
+  const handleLogoClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    navigate('/home');
+    openWelcome();
+  };
+
   return (
     <footer id="app-footer" className="w-full border-t border-neutral-300/80 bg-[#e5e4e4] text-neutral-600 mt-auto">
       <div className="max-w-[1680px] mx-auto px-4 sm:px-8 lg:px-12 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand & Mission */}
           <div className="md:col-span-2 space-y-3">
-            <Link to="/home" className="inline-block">
-              <EcomanzaLogo className="h-5 w-auto" color="#611C35" />
-            </Link>
+            <button
+              type="button"
+              onClick={handleLogoClick}
+              className="inline-block cursor-pointer bg-transparent border-none p-0 group"
+              aria-label="Ir a la bienvenida de Ecomanza"
+            >
+              <EcomanzaLogo className="h-5 w-auto transition-transform group-hover:scale-105 duration-200" color="#611C35" />
+            </button>
             <p className="text-xs text-neutral-500 max-w-sm leading-relaxed font-light">
               Formulaciones botánicas de aseo e higiene personal diseñadas con ingredientes 100% biodegradables y frascos de vidrio ámbar recargables.
             </p>

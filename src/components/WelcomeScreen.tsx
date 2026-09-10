@@ -92,13 +92,6 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onEnter }) => {
             <span className="relative font-medium">Entrar a la tienda</span>
             <ArrowRight className="relative w-4 h-4 transition-transform duration-300 group-hover:translate-x-1.5 text-white/90" strokeWidth={2} />
           </button>
-
-          <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-neutral-400 font-light flex items-center gap-1.5 opacity-80">
-            <span>Pulsar</span>
-            <kbd className="px-1.5 py-0.5 rounded border border-neutral-300 bg-white/70 text-neutral-600 text-[9px] shadow-2xs font-mono">
-              ↵ Enter
-            </kbd>
-          </span>
         </motion.div>
       </div>
     </motion.div>

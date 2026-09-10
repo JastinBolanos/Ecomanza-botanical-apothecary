@@ -1,12 +1,21 @@
 import React, { useState } from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { ShoppingBag, Menu, X, User } from 'lucide-react';
 import { EcomanzaLogo } from './EcomanzaLogo';
 import { useCart } from '../context/CartContext';
+import { useWelcome } from '../context/WelcomeContext';
 
 export const Navbar: React.FC = () => {
+  const navigate = useNavigate();
   const { totalCartCount, openSidebar } = useCart();
+  const { openWelcome } = useWelcome();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const handleBrandClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    navigate('/home');
+    openWelcome();
+  };
 
   const navLinks = [
     { name: 'Catálogo', path: '/home/productos' },
@@ -33,11 +42,12 @@ export const Navbar: React.FC = () => {
             {mobileMenuOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
           </button>
 
-          <Link
-            to="/home"
+          <button
+            type="button"
+            onClick={handleBrandClick}
             id="brand-logo-link"
-            className="flex items-center gap-2.5 group cursor-pointer"
-            aria-label="Ir al inicio"
+            className="flex items-center gap-2.5 group cursor-pointer text-left bg-transparent border-none p-0 focus:outline-hidden"
+            aria-label="Ir a la bienvenida de Ecomanza"
           >
             <div className="py-1 px-1.5 transition-transform group-hover:scale-105 duration-200">
               <EcomanzaLogo className="h-4 sm:h-4.5 w-auto" color="#611C35" />
@@ -45,7 +55,7 @@ export const Navbar: React.FC = () => {
             <span className="hidden sm:inline-block text-[10px] font-mono tracking-widest text-[#611C35]/80 uppercase font-semibold border-l border-neutral-300 pl-2.5">
               Aseo Botánico
             </span>
-          </Link>
+          </button>
         </div>
 
         {/* Center: Desktop Navigation with clean commercial labels */}
