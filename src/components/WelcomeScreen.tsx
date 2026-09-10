@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight } from 'lucide-react';
 import { AnimatedEcomanzaLogo } from './AnimatedEcomanzaLogo';
+import { ProductCurtain } from './ProductCurtain';
 
 interface WelcomeScreenProps {
   onEnter: () => void;
@@ -32,16 +33,11 @@ export const WelcomeScreen: React.FC<WelcomeScreenProps> = ({ onEnter }) => {
         background: 'radial-gradient(ellipse at 50% 45%, #FFFFFF 0%, #F9F7F2 50%, #ECE6DC 100%)',
       }}
     >
-      {/* Delicate Architectural Frame & Corner Notches */}
-      <div className="fixed inset-4 sm:inset-6 md:inset-8 border border-[#611C35]/12 pointer-events-none transition-opacity duration-700">
-        <span className="absolute -top-1 -left-1 w-2.5 h-2.5 border-t border-l border-[#611C35]/40" />
-        <span className="absolute -top-1 -right-1 w-2.5 h-2.5 border-t border-r border-[#611C35]/40" />
-        <span className="absolute -bottom-1 -left-1 w-2.5 h-2.5 border-b border-l border-[#611C35]/40" />
-        <span className="absolute -bottom-1 -right-1 w-2.5 h-2.5 border-b border-r border-[#611C35]/40" />
-      </div>
+      {/* Living Cascading Product Curtain Waterfall */}
+      <ProductCurtain />
 
       {/* Main Minimalist Center Stage */}
-      <div className="w-full max-w-4xl mx-auto flex flex-col items-center text-center my-auto py-8 z-10">
+      <div className="w-full max-w-4xl mx-auto flex flex-col items-center text-center my-auto py-8 z-20">
         {/* Animated Minimalist Eyebrow */}
         <motion.div
           initial={{ opacity: 0, y: -8, letterSpacing: '0.25em' }}
