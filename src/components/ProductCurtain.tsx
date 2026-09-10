@@ -8,107 +8,78 @@ interface ProductItem {
   imageUrl: string;
 }
 
-const CURTAIN_PRODUCTS: ProductItem[] = [
-  {
-    id: 'p1',
-    name: 'Jabón de Manos',
-    number: 'Nº 01',
-    imageUrl: '/products/jabon-manos.jpg',
-  },
-  {
-    id: 'p2',
-    name: 'Gel Revitalizante',
-    number: 'Nº 06',
-    imageUrl: '/products/gel-ducha.jpg',
-  },
-  {
-    id: 'p3',
-    name: 'Champú Purificante',
-    number: 'Nº 11',
-    imageUrl: '/products/champu-botanico.jpg',
-  },
-  {
-    id: 'p4',
-    name: 'Mascarilla Capilar',
-    number: 'Nº 13',
-    imageUrl: '/products/mascarilla-capilar.jpg',
-  },
-  {
-    id: 'p5',
-    name: 'Bálsamo Exfoliante',
-    number: 'Nº 02',
-    imageUrl: 'https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=600&q=80',
-  },
-  {
-    id: 'p6',
-    name: 'Aceite de Ducha',
-    number: 'Nº 07',
-    imageUrl: 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&q=80',
-  },
-  {
-    id: 'p7',
-    name: 'Gel Purificante',
-    number: 'Nº 03',
-    imageUrl: 'https://images.unsplash.com/photo-1556228852-6d35a585d566?auto=format&fit=crop&w=600&q=80',
-  },
-  {
-    id: 'p8',
-    name: 'Exfoliante Sal Marina',
-    number: 'Nº 08',
-    imageUrl: 'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=600&q=80',
-  },
-  {
-    id: 'p9',
-    name: 'Loción Reparadora',
-    number: 'Nº 05',
-    imageUrl: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=600&q=80',
-  },
-  {
-    id: 'p10',
-    name: 'Limpiador Corporal',
-    number: 'Nº 09',
-    imageUrl: 'https://images.unsplash.com/photo-1585232351009-aa87416fca90?auto=format&fit=crop&w=600&q=80',
-  },
-  {
-    id: 'p11',
-    name: 'Acondicionador Ligero',
-    number: 'Nº 12',
-    imageUrl: 'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=600&q=80',
-  },
-  {
-    id: 'p12',
-    name: 'Jabón al Olivo',
-    number: 'Nº 04',
-    imageUrl: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80',
-  },
+// 35 completely distinct botanical products across 5 independent columns with zero repetition
+const COLUMN_1_ITEMS: ProductItem[] = [
+  { id: 'p01', name: 'Jabón Botánico de Manos', number: 'Nº 01', imageUrl: '/products/jabon-manos.jpg?v=5' },
+  { id: 'p02', name: 'Bálsamo Exfoliante Diario', number: 'Nº 02', imageUrl: 'https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=600&q=80' },
+  { id: 'p03', name: 'Gel Purificante Sin Enjuague', number: 'Nº 03', imageUrl: 'https://images.unsplash.com/photo-1556228852-6d35a585d566?auto=format&fit=crop&w=600&q=80' },
+  { id: 'p04', name: 'Jabón Nutritivo al Olivo', number: 'Nº 04', imageUrl: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=600&q=80' },
+  { id: 'p05', name: 'Loción Reparadora de Cutículas', number: 'Nº 05', imageUrl: 'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=600&q=80' },
+  { id: 'p06', name: 'Gel de Baño Revitalizante', number: 'Nº 06', imageUrl: '/products/gel-ducha.jpg?v=5' },
+  { id: 'p07', name: 'Aceite Botánico de Ducha', number: 'Nº 07', imageUrl: 'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=600&q=80' },
 ];
 
-// Split into 5 staggered columns for an organic curtain cascade
-const COLUMNS: { items: ProductItem[]; duration: number; delay: number }[] = [
+const COLUMN_2_ITEMS: ProductItem[] = [
+  { id: 'p08', name: 'Exfoliante Sal Marina & Cedro', number: 'Nº 08', imageUrl: 'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?auto=format&fit=crop&w=600&q=80' },
+  { id: 'p09', name: 'Limpiador Piel Sensible', number: 'Nº 09', imageUrl: 'https://images.unsplash.com/photo-1585232351009-aa87416fca90?auto=format&fit=crop&w=600&q=80' },
+  { id: 'p10', name: 'Jabón Saponificado en Frío', number: 'Nº 10', imageUrl: 'https://images.unsplash.com/photo-1600857544200-b2f666a9a2ec?auto=format&fit=crop&w=600&q=80' },
+  { id: 'p11', name: 'Champú Purificante Ortiga', number: 'Nº 11', imageUrl: '/products/champu-botanico.jpg' },
+  { id: 'p12', name: 'Acondicionador Desenredante', number: 'Nº 12', imageUrl: 'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&w=600&q=80' },
+  { id: 'p13', name: 'Mascarilla Nutrición Murumuru', number: 'Nº 13', imageUrl: '/products/mascarilla-capilar.jpg' },
+  { id: 'p14', name: 'Limpiador Facial de Azahar', number: 'Nº 14', imageUrl: 'https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80' },
+];
+
+const COLUMN_3_ITEMS: ProductItem[] = [
+  { id: 'p15', name: 'Sérum Limpiador y Desmaquillante', number: 'Nº 15', imageUrl: 'https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?auto=format&fit=crop&w=600&q=80' },
+  { id: 'p16', name: 'Bálsamo Regenerador Nocturno', number: 'Nº 16', imageUrl: 'https://images.unsplash.com/photo-1535585209827-a15fcdbc4c2d?auto=format&fit=crop&w=600&q=80' },
+  { id: 'p17', name: 'Elixir Facial de Caléndula', number: 'Nº 17', imageUrl: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=600&q=80' },
+  { id: 'p18', name: 'Aceite Corporal de Jojoba', number: 'Nº 18', imageUrl: 'https://images.unsplash.com/photo-1526947425960-945c6e72858f?auto=format&fit=crop&w=600&q=80' },
+  { id: 'p19', name: 'Tónico Botánico de Hamamelis', number: 'Nº 19', imageUrl: 'https://images.unsplash.com/photo-1576426863848-c21f53c60b19?auto=format&fit=crop&w=600&q=80' },
+  { id: 'p20', name: 'Jabón Exfoliante de Arcilla', number: 'Nº 20', imageUrl: 'https://images.unsplash.com/photo-1512290900672-1f4803932e65?auto=format&fit=crop&w=600&q=80' },
+  { id: 'p21', name: 'Bruma Esencial de Lavanda', number: 'Nº 21', imageUrl: 'https://images.unsplash.com/photo-1567928815116-2c9ff506e788?auto=format&fit=crop&w=600&q=80' },
+];
+
+const COLUMN_4_ITEMS: ProductItem[] = [
+  { id: 'p22', name: 'Emulsión Corporal de Karité', number: 'Nº 22', imageUrl: 'https://images.unsplash.com/photo-1547887537-6158d64c35b3?auto=format&fit=crop&w=600&q=80' },
+  { id: 'p23', name: 'Mascarilla de Arcilla Rosa', number: 'Nº 23', imageUrl: 'https://images.unsplash.com/photo-1519735777090-ec97162dc266?auto=format&fit=crop&w=600&q=80' },
+  { id: 'p24', name: 'Bálsamo Labial de Cera Vegetal', number: 'Nº 24', imageUrl: 'https://images.unsplash.com/photo-1617897903246-719242758050?auto=format&fit=crop&w=600&q=80' },
+  { id: 'p25', name: 'Sales de Baño Herbáceas', number: 'Nº 25', imageUrl: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=600&q=80' },
+  { id: 'p26', name: 'Hidrolato Puro de Rosa Mosqueta', number: 'Nº 26', imageUrl: 'https://images.unsplash.com/photo-1508759073847-9ca702cec7d2?auto=format&fit=crop&w=600&q=80' },
+  { id: 'p27', name: 'Concentrado de Romero y Cedro', number: 'Nº 27', imageUrl: 'https://images.unsplash.com/photo-1573461160327-b450ce3d8e7f?auto=format&fit=crop&w=600&q=80' },
+  { id: 'p28', name: 'Champú Fortificante de Salvia', number: 'Nº 28', imageUrl: 'https://images.unsplash.com/photo-1594824813589-98319f6f6580?auto=format&fit=crop&w=600&q=80' },
+];
+
+const COLUMN_5_ITEMS: ProductItem[] = [
+  { id: 'p29', name: 'Aceite Seco Nutritivo de Argán', number: 'Nº 29', imageUrl: 'https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?auto=format&fit=crop&w=600&q=80' },
+  { id: 'p30', name: 'Gel de Baño Ciprés & Tomillo', number: 'Nº 30', imageUrl: 'https://images.unsplash.com/photo-1597354984706-fac992d9306f?auto=format&fit=crop&w=600&q=80' },
+  { id: 'p31', name: 'Elixir Corporal Ámbar', number: 'Nº 31', imageUrl: 'https://images.unsplash.com/photo-1556760544-74068565f05c?auto=format&fit=crop&w=600&q=80' },
+  { id: 'p32', name: 'Jabón de Avena Saponificado', number: 'Nº 32', imageUrl: 'https://images.unsplash.com/photo-1530630458144-014709e100ce?auto=format&fit=crop&w=600&q=80' },
+  { id: 'p33', name: 'Mascarilla Purificante de Algas', number: 'Nº 33', imageUrl: 'https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=600&q=80' },
+  { id: 'p34', name: 'Bruma Atmosférica de Enebro', number: 'Nº 34', imageUrl: 'https://images.unsplash.com/photo-1570554886111-e80fcca6a029?auto=format&fit=crop&w=600&q=80' },
+  { id: 'p35', name: 'Bálsamo Botánico de Noche', number: 'Nº 35', imageUrl: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=600&q=80' },
+];
+
+// 5 staggered columns with completely unique products and varied descent paces
+const COLUMNS: { items: ProductItem[]; duration: number }[] = [
   {
-    items: [CURTAIN_PRODUCTS[0], CURTAIN_PRODUCTS[4], CURTAIN_PRODUCTS[8], CURTAIN_PRODUCTS[1]],
-    duration: 34,
-    delay: 0,
+    items: COLUMN_1_ITEMS,
+    duration: 44,
   },
   {
-    items: [CURTAIN_PRODUCTS[2], CURTAIN_PRODUCTS[6], CURTAIN_PRODUCTS[10], CURTAIN_PRODUCTS[3]],
-    duration: 26,
-    delay: -12,
+    items: COLUMN_2_ITEMS,
+    duration: 36,
   },
   {
-    items: [CURTAIN_PRODUCTS[5], CURTAIN_PRODUCTS[9], CURTAIN_PRODUCTS[1], CURTAIN_PRODUCTS[7]],
+    items: COLUMN_3_ITEMS,
+    duration: 48,
+  },
+  {
+    items: COLUMN_4_ITEMS,
     duration: 38,
-    delay: -6,
   },
   {
-    items: [CURTAIN_PRODUCTS[3], CURTAIN_PRODUCTS[7], CURTAIN_PRODUCTS[11], CURTAIN_PRODUCTS[0]],
-    duration: 29,
-    delay: -18,
-  },
-  {
-    items: [CURTAIN_PRODUCTS[1], CURTAIN_PRODUCTS[5], CURTAIN_PRODUCTS[9], CURTAIN_PRODUCTS[2]],
-    duration: 35,
-    delay: -8,
+    items: COLUMN_5_ITEMS,
+    duration: 46,
   },
 ];
 

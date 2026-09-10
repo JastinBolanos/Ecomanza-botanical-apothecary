@@ -13,8 +13,8 @@ export const PRODUCTS: Product[] = [
     volume: '500 ml',
     price: 24.0,
     currency: '€',
-    imageUrl: '/products/jabon-manos.jpg',
-    imageAlt: 'Frasco de vidrio ámbar con dosificador de Jabón Botánico de Manos ECOMANZA Nº 01',
+    imageUrl: '/products/jabon-manos.jpg?v=5',
+    imageAlt: 'Envase dispensador dosificador ámbar de Jabón Botánico de Manos ECOMANZA Nº 01 con formulación botánica líquida',
     notes: ['Romero silvestre', 'Cedro atlas', 'Aloe vera orgánico'],
     ingredients: [
       'Agua floral de romero (Rosmarinus Officinalis)',
@@ -127,8 +127,8 @@ export const PRODUCTS: Product[] = [
     volume: '500 ml',
     price: 27.0,
     currency: '€',
-    imageUrl: '/products/gel-ducha.jpg',
-    imageAlt: 'Botella de vidrio ámbar de Gel de Baño y Ducha Revitalizante ECOMANZA Nº 06',
+    imageUrl: '/products/gel-ducha.jpg?v=5',
+    imageAlt: 'Envase botánico herbal de Gel de Baño y Ducha Revitalizante ECOMANZA Nº 06 formulado con eucalipto silvestre y menta',
     notes: ['Eucalipto silvestre', 'Menta fresca', 'Oliva virgen'],
     ingredients: [
       'Destilado de hojas de eucalipto silvestre',
