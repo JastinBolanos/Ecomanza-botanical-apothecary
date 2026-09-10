@@ -1,132 +1,132 @@
-# 🌿 ECOMANZA · Botica Botánica & Cosmética Sostenible (v1.0.0-PROD)
+# 🌿 ECOMANZA · Botanical Apothecary & Sustainable Cosmetics (v1.0.0-PROD)
 
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
 ![Deployment](https://img.shields.io/badge/deployment-production-blue)
 ![Version](https://img.shields.io/badge/version-1.0.0--PROD-orange)
 ![Sustainability](https://img.shields.io/badge/packaging-zero_waste-success)
 
-Plataforma de comercio electrónico y botica botánica contemporánea de ECOMANZA.  
-Este sistema digital fue concebido con un enfoque artesanal y sobrio para brindar una experiencia sensorial serena, facilitando el descubrimiento de fórmulas botánicas puras, el desglose honesto de ingredientes de origen silvestre y un proceso de compra fluido, respetuoso y minimalista.
+E-commerce platform and contemporary botanical apothecary by ECOMANZA.  
+This digital system was conceived with an artisanal and sober approach to provide a serene sensory experience, facilitating the discovery of pure botanical formulas, the honest breakdown of wild-harvested ingredients, and a fluid, respectful, and minimalist shopping process.
 
-🌍 **[Ver Plataforma en Vivo (Producción) 🟢]**  
-`[AQUÍ VA EL LINK DE LA PLATAFORMA EN VIVO]`
-
----
-
-![Captura de Pantalla del Proyecto](https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1400&q=80)
-*<!-- [AQUÍ VA EL LINK DE LA CAPTURA O IMAGEN PRINCIPAL] -->*
+🌍 **[View Live Platform (Production) 🟢]**  
+`[HERE GOES THE LIVE PLATFORM LINK]`
 
 ---
 
-## 🎥 Demostración de Experiencia y Navegación Sensorial
-
-### 🎬 Recorrido Interactivo de la Tienda y Catálogo Botánico
-Exploración de la interfaz de usuario: pantalla de bienvenida inmersiva con transición suave, catálogo con filtrado por categoría aromática, ficha técnica de producto con notas olfativas y ritual de aplicación, y cajón lateral interactivo para la gestión de la cesta de compra.
-
-`[AQUÍ VA EL LINK DEL VIDEO O DEMOSTRACIÓN]`
+![Project Screenshot](https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1400&q=80)
+*<!-- [HERE GOES THE SCREENSHOT OR MAIN IMAGE LINK] -->*
 
 ---
 
-## 🏗️ Arquitectura de Sistema y Stack Tecnológico
+## 🎥 Sensory Navigation and Experience Demonstration
 
-Este repositorio alberga la arquitectura frontend de la plataforma web, desarrollada siguiendo principios de sobriedad tipográfica, accesibilidad visual y rendimiento de carga óptimo. El desarrollo se realizó de manera disciplinada y modular, priorizando el confort visual, tiempos de respuesta instantáneos y un diseño orgánico en tonos lino y piedra.
+### 🎬 Interactive Tour of the Store and Botanical Catalog
+User interface walkthrough: immersive welcome screen with smooth transition, catalog with aromatic category filtering, product specification sheet with olfactory notes and application ritual, and interactive side drawer for shopping basket management.
+
+`[HERE GOES THE VIDEO OR DEMO LINK]`
+
+---
+
+## 🏗️ System Architecture and Technology Stack
+
+This repository hosts the frontend architecture of the web platform, developed following principles of typographic restraint, visual accessibility, and optimal loading performance. Development was conducted in a disciplined and modular manner, prioritizing visual comfort, instant response times, and an organic design in linen and stone tones.
 
 ### Core & Runtime (Edge-Optimized):
-* **`react (^19.0.1)` & `react-dom`**: Renderizado declarativo con las últimas mejoras de concurrencia y gestión eficiente del ciclo de vida de componentes.
-* **`typescript (~5.8.2)`**: Tipado estricto para asegurar la consistencia del catálogo, tipos de carritos, variantes de volumen e ingredientes.
-* **`vite (^6.2.3)`**: Servidor de desarrollo ultrarrápido y empaquetado optimizado con división de código para producción.
-* **`react-router-dom (^7.18.3)`**: Enrutamiento declarativo del lado del cliente para una navegación instantánea sin parpadeos.
+* **`react (^19.0.1)` & `react-dom`**: Declarative rendering with the latest concurrency enhancements and efficient component lifecycle management.
+* **`typescript (~5.8.2)`**: Strict typing to ensure catalog consistency, cart item types, volume variants, and ingredient definitions.
+* **`vite (^6.2.3)`**: Ultra-fast development server and optimized bundling with code splitting for production.
+* **`react-router-dom (^7.18.3)`**: Declarative client-side routing for instant, flicker-free navigation.
 
-### Interfaz de Usuario (UI) & Estilizado:
-* **`tailwindcss (^4.1.14)`**: Sistema de utilidades CSS moderno configurado para una paleta editorial cálida, respetando proporciones matemáticas en espaciados y tipografías.
-* **`motion (^12.23.24)`**: Transiciones y microinteracciones coreografiadas con sutileza (despliegue del cajón de compra, transiciones de pantalla y modales).
-* **`lucide-react (^0.546.0)`**: Iconografía vectorial minimalista y estandarizada (bolsa de compra, búsqueda botánica, sellos de sostenibilidad).
+### User Interface (UI) & Styling:
+* **`tailwindcss (^4.1.14)`**: Modern utility CSS system configured for a warm editorial palette, honoring mathematical proportions in spacing and typography.
+* **`motion (^12.23.24)`**: Transitions and microinteractions choreographed with subtlety (shopping drawer slide-in, screen transitions, and modals).
+* **`lucide-react (^0.546.0)`**: Minimalist and standardized vector iconography (shopping bag, botanical search, sustainability seals).
 
-### Gestión de Estado & Experiencia de Usuario:
-* **`CartContext`**: Contexto React con sincronización en almacenamiento local (`localStorage`), manteniendo la cesta de la compra preservada entre sesiones de navegación.
-* **`ComingSoonModalContext`**: Gestión centralizada de estados y avisos amigables de funcionalidades complementarias.
-* **`@google/genai (^2.4.0)`**: Preparado para servicios de asesoramiento botánico y formulación personalizada asistida por IA.
-
----
-
-## 🚀 Módulos Operativos (Desplegados)
-
-### 🌿 Pantalla de Bienvenida & Transición Inmersiva (`WelcomeScreen`)
-* Bienvenida visual con tipografía serif refinada (*Playfair / Editorial*) y mensaje inspirador de desaceleración y bienestar.
-* Desvanecimiento fluido hacia el catálogo principal con memoria de sesión para no entorpecer navegaciones recurrentes.
-
-### 🧴 Catálogo de Fórmulas Botánicas (`ProductsPage` & `ProductCard`)
-* Visualización honesta de productos clasificados por familias: Cabello, Rostro, Cuerpo y Hogar.
-* Filtros por necesidades capilares/cutáneas (nutrición, purificación, calma, equilibrio).
-* Indicador de volumen (`ml`), notas botánicas en etiquetas minimalistas y precio visible de forma clara.
-
-### 📖 Ficha de Producto y Ritual de Uso (`ProductDetailPage`)
-* Desglose completo de activos naturales (murumuru amazónico, aceite de lino, vetiver de Haití, romero silvestre).
-* Guía del ritual de aplicación paso a paso para transformar el aseo cotidiano en un hábito consciente.
-* Selector de unidades y botón de adición directa a la cesta con confirmación háptica y visual.
-
-### 🛍️ Cajón Lateral de Compra (`Sidebar` & `CartContext`)
-* Carrito accesible desde cualquier vista sin romper el flujo de lectura.
-* Modificación dinámica de cantidades, cálculo automático de importes e indicador visual de umbral para envío gratuito sin huella de carbono.
-* Pasarela simulada de checkout preparada para integración con pasarelas de pago sostenibles (Stripe / Redsys).
-
-### 🔍 Buscador Botánico Predictivo (`SearchBar`)
-* Búsqueda en tiempo real por nombre de producto, ingredientes clave o beneficios terapéuticos.
-* Acceso directo a fichas de producto con resaltado visual de coincidencias.
-
-### 🌱 Manifiesto de Sostenibilidad & Trazabilidad (`SustainabilityPage`)
-* Explicación transparente de la política de envases de vidrio ámbar reutilizables y recambios sólidos biodegradables.
-* Filosofía de formulaciones libres de sulfatos agresivos, siliconas no biodegradables y fragancias sintéticas.
+### State Management & User Experience:
+* **`CartContext`**: React Context with local storage synchronization (`localStorage`), keeping the shopping bag preserved across browsing sessions.
+* **`ComingSoonModalContext`**: Centralized state management and friendly notices for upcoming complementary features.
+* **`@google/genai (^2.4.0)`**: Prepared for AI-assisted botanical advice and custom formulation services.
 
 ---
 
-## 💻 Guía de Despliegue y Ejecución (Entorno Local)
+## 🚀 Operational Modules (Deployed)
 
-Para desarrolladores o colaboradores que deseen ejecutar, auditar o contribuir al proyecto en un entorno local:
+### 🌿 Welcome Screen & Immersive Transition (`WelcomeScreen`)
+* Visual welcome with refined serif typography (*Playfair / Editorial*) and an inspiring message of deceleration and well-being.
+* Fluid fade into the main catalog with session memory to avoid hindering returning visits.
 
-### 1. Clonar el repositorio y preparar el directorio
+### 🧴 Botanical Formulas Catalog (`ProductsPage` & `ProductCard`)
+* Honest product showcase classified by families: Hair, Face, Body, and Home.
+* Filtering by hair/skin needs (nutrition, purification, soothing, balance).
+* Volume indicator (`ml`), botanical notes on minimalist chips, and clearly visible pricing.
+
+### 📖 Product Detail & Application Ritual (`ProductDetailPage`)
+* Complete breakdown of natural active ingredients (Amazonian murumuru, flaxseed oil, Haitian vetiver, wild rosemary).
+* Step-by-step application ritual guide to turn daily hygiene into a mindful ritual.
+* Quantity selector and direct add-to-cart button with haptic and visual feedback.
+
+### 🛍️ Shopping Side Drawer (`Sidebar` & `CartContext`)
+* Cart accessible from any view without disrupting the reading flow.
+* Dynamic quantity modifications, automatic total recalculations, and visual threshold indicator for carbon-neutral free shipping.
+* Simulated checkout flow prepared for integration with sustainable payment gateways (Stripe / Redsys).
+
+### 🔍 Predictive Botanical Search (`SearchBar`)
+* Real-time search by product name, key ingredients, or therapeutic benefits.
+* Direct access to product details with visual match highlighting.
+
+### 🌱 Sustainability Manifesto & Traceability (`SustainabilityPage`)
+* Transparent explanation of the reusable amber glass packaging policy and biodegradable solid refills.
+* Philosophy of formulations free of harsh sulfates, non-biodegradable silicones, and synthetic fragrances.
+
+---
+
+## 💻 Deployment and Execution Guide (Local Environment)
+
+For developers or contributors wishing to run, audit, or contribute to the project in a local environment:
+
+### 1. Clone the repository and navigate to the directory
 ```bash
-git clone [AQUÍ VA EL LINK DEL REPOSITORIO DE GITHUB]
+git clone [HERE GOES THE GITHUB REPOSITORY LINK]
 cd ecomanza
 ```
 
-### 2. Instalación de dependencias (Node.js v18+)
-Instale todas las dependencias del proyecto de forma reproducible:
+### 2. Install dependencies (Node.js v18+)
+Install all project dependencies reproducibly:
 ```bash
 npm install
 ```
 
-### 3. Configuración de Entorno (Environment)
-Si desea habilitar integraciones externas o asistentes de recomendación botánica, clone el archivo de variables de entorno:
+### 3. Environment Configuration
+If you wish to enable external integrations or botanical recommendation assistants, duplicate the environment variables file:
 ```bash
 cp .env.example .env
 ```
-*(Nota: Configure las claves de API necesarias dentro de `.env` según corresponda).*
+*(Note: Configure the necessary API keys inside `.env` accordingly).*
 
-### 4. Iniciar el servidor local de desarrollo
-Inicie el servidor de Vite con recarga rápida y soporte de red local:
+### 4. Start the local development server
+Start the Vite server with fast reload and local network support:
 ```bash
 npm run dev
 ```
-La terminal indicará la dirección local activa (por defecto `http://localhost:3000`).
+The terminal will indicate the active local address (default `http://localhost:3000`).
 
-### 5. Validación y Compilación para Producción (CI/CD Pipeline)
-Para verificar tipos y generar los archivos optimizados listos para su distribución en CDN / Edge:
+### 5. Validation and Production Build (CI/CD Pipeline)
+To verify types and generate optimized files ready for CDN / Edge distribution:
 ```bash
-# Comprobación de tipos en TypeScript
+# TypeScript type checking
 npm run lint
 
-# Generación del bundle de producción
+# Production bundle build
 npm run build
 ```
 
 ---
 
-## 🤝 Reflexión y Filosofía de Construcción
+## 🤝 Reflection and Craft Philosophy
 
-> *"Construir esta plataforma fue un ejercicio de contención y respeto por los detalles. En lugar de saturar al visitante con llamadas comerciales estridentes, nos propusimos crear un refugio digital: espacios en blanco que respiran, tipografía pausada, transparencia radical en los ingredientes y un código limpio y mantenible que rinde tributo a la botica tradicional."*
+> *"Building this platform was an exercise in restraint and reverence for detail. Rather than overwhelming visitors with loud commercial calls-to-action, we set out to create a digital sanctuary: breathing whitespace, measured typography, radical ingredient transparency, and clean, maintainable code paying tribute to the traditional apothecary."*
 
 ---
 
-Propiedad Intelectual de **ECOMANZA Botica Botánica** © 2026. Todos los derechos reservados.  
-`[AQUÍ VA EL LINK AL SITIO WEB OFICIAL O CONTACTO]`
+Intellectual Property of **ECOMANZA Botanical Apothecary** © 2026. All rights reserved.  
+`[HERE GOES THE OFFICIAL WEBSITE OR CONTACT LINK]`
