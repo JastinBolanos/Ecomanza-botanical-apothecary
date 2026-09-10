@@ -20,7 +20,6 @@ export const Navbar: React.FC = () => {
   const navLinks = [
     { name: 'Catálogo', path: '/home/productos' },
     { name: 'Filosofía', path: '/home/sostenibilidad' },
-    { name: 'Mi Cuenta', path: '/home/perfil' },
     { name: 'Contacto', path: '/home/contacto' },
   ];
 
