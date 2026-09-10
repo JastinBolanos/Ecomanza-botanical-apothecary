@@ -1,4 +1,3 @@
-
 # 🌿 ECOMANZA · Botanical Apothecary & Sustainable Cosmetics (v1.0.0-PROD)
 
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
@@ -22,7 +21,7 @@ This digital system was conceived with an artisanal and sober approach to provid
 ### 🎬 Interactive Tour of the Store and Botanical Catalog
 User interface walkthrough: immersive welcome screen with smooth transition, catalog with aromatic category filtering, product specification sheet with olfactory notes and application ritual, and interactive side drawer for shopping basket management.
 
-`[HERE GOES THE VIDEO OR DEMO LINK]`
+https://github.com/user-attachments/assets/cd4ca09f-68c8-444e-b0c3-6ea8e6711b8b
 
 ---
 
