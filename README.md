@@ -1,3 +1,4 @@
+
 # 🌿 ECOMANZA · Botanical Apothecary & Sustainable Cosmetics (v1.0.0-PROD)
 
 ![Build](https://img.shields.io/badge/build-passing-brightgreen)
@@ -8,13 +9,11 @@
 E-commerce platform and contemporary botanical apothecary by ECOMANZA.  
 This digital system was conceived with an artisanal and sober approach to provide a serene sensory experience, facilitating the discovery of pure botanical formulas, the honest breakdown of wild-harvested ingredients, and a fluid, respectful, and minimalist shopping process.
 
-🌍 **[View Live Platform (Production) 🟢]**  
-`[HERE GOES THE LIVE PLATFORM LINK]`
+🌍 **View Live Platform (Production) 🟢**  https://ecomanza.vercel.app/
 
 ---
 
-![Project Screenshot](https://images.unsplash.com/photo-1556228720-195a672e8a03?auto=format&fit=crop&w=1400&q=80)
-*<!-- [HERE GOES THE SCREENSHOT OR MAIN IMAGE LINK] -->*
+<img width="1892" height="1078" alt="Captura de pantalla 2026-09-10 170023" src="https://github.com/user-attachments/assets/88102c6b-0a89-403f-abac-2e869b1b34c4" />
 
 ---
 
