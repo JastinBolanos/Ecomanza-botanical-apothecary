@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { AnimatePresence, motion } from 'motion/react';
-import { X, Sparkles, Check } from 'lucide-react';
+import { X, Sparkles } from 'lucide-react';
 
 interface ComingSoonModalProps {
   isOpen: boolean;
@@ -90,17 +90,6 @@ export const ComingSoonModal: React.FC<ComingSoonModalProps> = ({
             <p className="text-xs sm:text-sm text-neutral-600 font-light leading-relaxed max-w-sm mx-auto">
               El registro de cuentas y la tienda en línea de Ecomanza se habilitarán muy pronto en una próxima actualización.
             </p>
-
-            {/* Subtle Circular Economy Feature Notice */}
-            <div className="bg-neutral-50 rounded-xl p-3 border border-neutral-200/60 text-[11px] text-neutral-500 font-mono space-y-1">
-              <div className="flex items-center justify-center gap-1.5 text-emerald-800 font-medium">
-                <Check className="w-3.5 h-3.5" />
-                <span>Formulaciones 100% biodegradables</span>
-              </div>
-              <p className="text-neutral-400 font-light">
-                Vidrio ámbar recargable y red de retorno de envases activa
-              </p>
-            </div>
 
             {/* Bottom Confirm Button "Entendido" */}
             <div className="pt-2">
