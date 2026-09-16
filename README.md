@@ -125,6 +125,4 @@ npm run build
 > *"Building this platform was an exercise in restraint and reverence for detail. Rather than overwhelming visitors with loud commercial calls-to-action, we set out to create a digital sanctuary: breathing whitespace, measured typography, radical ingredient transparency, and clean, maintainable code paying tribute to the traditional apothecary."*
 
 ---
-
-Intellectual Property of **ECOMANZA Botanical Apothecary** © 2026. All rights reserved.  
-`[HERE GOES THE OFFICIAL WEBSITE OR CONTACT LINK]`
+<img width="1255" height="252" alt="Captura de pantalla 2026-09-16 123050" src="https://github.com/user-attachments/assets/decb0940-fe49-49d9-827e-80508e0c81d6" />
