@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="ECOMANZA Banner" src="https://github.com/user-attachments/assets/ab567dfd-a36f-4f5e-9699-87ec1007a01d" width="70%" />
+  <img alt="ECOMANZA Banner" src="https://github.com/user-attachments/assets/ab567dfd-a36f-4f5e-9699-87ec1007a01d" width="40%" />
 
   <br>
 
@@ -23,7 +23,7 @@
 <div align="center">
   <h3>🌍 <b><a href="https://ecomanza.vercel.app/">View Live Platform (Production) 🟢</a></b></h3>
   <br>
-  <img alt="ECOMANZA Preview" src="https://github.com/user-attachments/assets/88102c6b-0a89-403f-abac-2e869b1b34c4" width="70%" />
+  <img alt="ECOMANZA Preview" src="https://github.com/user-attachments/assets/88102c6b-0a89-403f-abac-2e869b1b34c4" width="80%" />
 </div>
 
 ## 🎥 Sensory Navigation and Experience Demonstration
