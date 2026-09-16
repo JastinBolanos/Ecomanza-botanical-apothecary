@@ -1,20 +1,30 @@
-# 🌿 ECOMANZA · Botanical Apothecary & Sustainable Cosmetics (v1.0.0-PROD)
+<div align="center">
+  <img alt="ECOMANZA Banner" src="https://github.com/user-attachments/assets/ab567dfd-a36f-4f5e-9699-87ec1007a01d" width="70%" />
 
-![Build](https://img.shields.io/badge/build-passing-brightgreen)
-![Deployment](https://img.shields.io/badge/deployment-production-blue)
-![Version](https://img.shields.io/badge/version-1.0.0--PROD-orange)
-![Sustainability](https://img.shields.io/badge/packaging-zero_waste-success)
+  <br>
 
-E-commerce platform and contemporary botanical apothecary by ECOMANZA.  
-This digital system was conceived with an artisanal and sober approach to provide a serene sensory experience, facilitating the discovery of pure botanical formulas, the honest breakdown of wild-harvested ingredients, and a fluid, respectful, and minimalist shopping process.
+  <h3>Botanical Apothecary & Sustainable Cosmetics (v1.0.0-PROD)</h3>
 
-🌍 **View Live Platform (Production) 🟢**  https://ecomanza.vercel.app/
+  <p>
+    <img src="https://img.shields.io/badge/build-passing-brightgreen" alt="Build Status" />
+    <img src="https://img.shields.io/badge/deployment-production-blue" alt="Deployment" />
+    <img src="https://img.shields.io/badge/version-1.0.0--PROD-orange" alt="Version" />
+    <img src="https://img.shields.io/badge/packaging-zero_waste-success" alt="Sustainability" />
+  </p>
+</div>
 
----
+<br>
 
-<img width="1892" height="1078" alt="Captura de pantalla 2026-09-10 170023" src="https://github.com/user-attachments/assets/88102c6b-0a89-403f-abac-2e869b1b34c4" />
+> **E-commerce platform and contemporary botanical apothecary by ECOMANZA.**  
+> This digital system was conceived with an artisanal and sober approach to provide a serene sensory experience, facilitating the discovery of pure botanical formulas, the honest breakdown of wild-harvested ingredients, and a fluid, respectful, and minimalist shopping process.
 
----
+<br>
+
+<div align="center">
+  <h3>🌍 <b><a href="https://ecomanza.vercel.app/">View Live Platform (Production) 🟢</a></b></h3>
+  <br>
+  <img alt="ECOMANZA Preview" src="https://github.com/user-attachments/assets/88102c6b-0a89-403f-abac-2e869b1b34c4" width="70%" />
+</div>
 
 ## 🎥 Sensory Navigation and Experience Demonstration
 
