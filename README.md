@@ -15,8 +15,8 @@
 
 <br>
 
-> **E-commerce platform and contemporary botanical apothecary by ECOMANZA.**  
-> This digital system was conceived with an artisanal and sober approach to provide a serene sensory experience, facilitating the discovery of pure botanical formulas, the honest breakdown of wild-harvested ingredients, and a fluid, respectful, and minimalist shopping process.
+> **Modern Frontend E-Commerce & Cosmetics UI Showcase.**  
+> A client-side frontend web application presenting an artisanal botanical apothecary catalog. This project focuses entirely on frontend engineering: accessible UI components, formula ingredient breakdowns, mindful ritual guides, aromatic category filtering, and an interactive slide-over cart drawer.
 
 <br>
 
@@ -29,7 +29,7 @@
 ## 🎥 Sensory Navigation and Experience Demonstration
 
 ### 🎬 Interactive Tour of the Store and Botanical Catalog
-User interface walkthrough: immersive welcome screen with smooth transition, catalog with aromatic category filtering, product specification sheet with olfactory notes and application ritual, and interactive side drawer for shopping basket management.
+Frontend user interface walkthrough: gentle welcome screen transition, product exploration with category filtering, detailed ingredient cards with step-by-step application instructions, and the interactive slide-over cart drawer.
 
 https://github.com/user-attachments/assets/cd4ca09f-68c8-444e-b0c3-6ea8e6711b8b
 
@@ -37,60 +37,60 @@ https://github.com/user-attachments/assets/cd4ca09f-68c8-444e-b0c3-6ea8e6711b8b
 
 ## 🏗️ System Architecture and Technology Stack
 
-This repository hosts the frontend architecture of the web platform, developed following principles of typographic restraint, visual accessibility, and optimal loading performance. Development was conducted in a disciplined and modular manner, prioritizing visual comfort, instant response times, and an organic design in linen and stone tones.
+This repository is dedicated exclusively to the **frontend client-side architecture** of the web platform. It explores component modularity, warm neutral design systems, and responsive layout practices built entirely for the browser.
 
-### Core & Runtime (Edge-Optimized):
-* **`react (^19.0.1)` & `react-dom`**: Declarative rendering with the latest concurrency enhancements and efficient component lifecycle management.
-* **`typescript (~5.8.2)`**: Strict typing to ensure catalog consistency, cart item types, volume variants, and ingredient definitions.
-* **`vite (^6.2.3)`**: Ultra-fast development server and optimized bundling with code splitting for production.
-* **`react-router-dom (^7.18.3)`**: Declarative client-side routing for instant, flicker-free navigation.
+### Core & Runtime (Frontend Client):
+* **`react (^19.0.1)` & `react-dom`**: Modern frontend rendering engine managing component lifecycles and reactive UI state updates.
+* **`typescript (~5.8.2)`**: Static type safety for product models, category definitions, cart items, and ingredient schemas.
+* **`vite (^6.2.3)`**: Fast local build tooling and optimized client-side bundle generation.
+* **`react-router-dom (^7.18.3)`**: Declarative client-side routing for smooth, single-page application navigation.
 
 ### User Interface (UI) & Styling:
-* **`tailwindcss (^4.1.14)`**: Modern utility CSS system configured for a warm editorial palette, honoring mathematical proportions in spacing and typography.
-* **`motion (^12.23.24)`**: Transitions and microinteractions choreographed with subtlety (shopping drawer slide-in, screen transitions, and modals).
-* **`lucide-react (^0.546.0)`**: Minimalist and standardized vector iconography (shopping bag, botanical search, sustainability seals).
+* **`tailwindcss (^4.1.14)`**: Utility-first CSS framework configured with warm stone, linen, and botanical color tokens.
+* **`motion (^12.23.24)`**: Fluid choreography for page transitions, slide-over panels, and interactive modal dialogs.
+* **`lucide-react (^0.546.0)`**: Minimal vector iconography for navigation, search, and informational badges.
 
 ### State Management & User Experience:
-* **`CartContext`**: React Context with local storage synchronization (`localStorage`), keeping the shopping bag preserved across browsing sessions.
-* **`ComingSoonModalContext`**: Centralized state management and friendly notices for upcoming complementary features.
-* **`@google/genai (^2.4.0)`**: Prepared for AI-assisted botanical advice and custom formulation services.
+* **`CartContext`**: Client-side React Context synchronized with browser local storage (`localStorage`) to preserve cart state across user sessions.
+* **`ComingSoonModalContext`**: Frontend state management for preview notifications and planned feature modals.
+* **`@google/genai (^2.4.0)`**: Client integration for contextual botanical suggestions and personalized skincare tips.
 
 ---
 
 ## 🚀 Operational Modules (Deployed)
 
-### 🌿 Welcome Screen & Immersive Transition (`WelcomeScreen`)
-* Visual welcome with refined serif typography (*Playfair / Editorial*) and an inspiring message of deceleration and well-being.
-* Fluid fade into the main catalog with session memory to avoid hindering returning visits.
+### 🌿 Welcome Screen & Intro Transition (`WelcomeScreen`)
+* Minimalist opening splash screen featuring serif typography and an introductory message on everyday wellness.
+* Gentle fade transition into the product catalog with session storage checks to respect returning users.
 
 ### 🧴 Botanical Formulas Catalog (`ProductsPage` & `ProductCard`)
-* Honest product showcase classified by families: Hair, Face, Body, and Home.
-* Filtering by hair/skin needs (nutrition, purification, soothing, balance).
-* Volume indicator (`ml`), botanical notes on minimalist chips, and clearly visible pricing.
+* Responsive product grid organized across distinct families: Hair, Face, Body, and Home.
+* Client-side filter controls by skin and hair needs (hydration, purification, soothing, balance).
+* Clear visual hierarchy highlighting product volume (`ml`), aromatic notes, and pricing.
 
 ### 📖 Product Detail & Application Ritual (`ProductDetailPage`)
-* Complete breakdown of natural active ingredients (Amazonian murumuru, flaxseed oil, Haitian vetiver, wild rosemary).
-* Step-by-step application ritual guide to turn daily hygiene into a mindful ritual.
-* Quantity selector and direct add-to-cart button with haptic and visual feedback.
+* Itemized presentation of key botanical ingredients (murumuru butter, flaxseed oil, vetiver, wild rosemary).
+* Step-by-step instructions outlining recommended skincare and haircare rituals.
+* Responsive quantity selectors and instant cart additions with immediate visual confirmation.
 
 ### 🛍️ Shopping Side Drawer (`Sidebar` & `CartContext`)
-* Cart accessible from any view without disrupting the reading flow.
-* Dynamic quantity modifications, automatic total recalculations, and visual threshold indicator for carbon-neutral free shipping.
-* Simulated checkout flow prepared for integration with sustainable payment gateways (Stripe / Redsys).
+* Accessible slide-over cart drawer reachable from any page without navigating away.
+* Dynamic quantity modifiers, real-time subtotal calculations, and a visual progress indicator for free shipping thresholds.
+* Simulated client-side checkout transition prepared for integration with payment gateways.
 
-### 🔍 Predictive Botanical Search (`SearchBar`)
-* Real-time search by product name, key ingredients, or therapeutic benefits.
-* Direct access to product details with visual match highlighting.
+### 🔍 Botanical Search (`SearchBar`)
+* Real-time search by product name, active ingredient, or desired benefit.
+* Instant visual matching and direct navigation to individual product specification views.
 
-### 🌱 Sustainability Manifesto & Traceability (`SustainabilityPage`)
-* Transparent explanation of the reusable amber glass packaging policy and biodegradable solid refills.
-* Philosophy of formulations free of harsh sulfates, non-biodegradable silicones, and synthetic fragrances.
+### 🌱 Sustainability & Packaging (`SustainabilityPage`)
+* Informational section highlighting reusable amber glass packaging and solid refill formats.
+* Clear brand values showcasing formulations free from harsh sulfates, non-biodegradable silicones, and synthetic perfumes.
 
 ---
 
 ## 💻 Deployment and Execution Guide (Local Environment)
 
-For developers or contributors wishing to run, audit, or contribute to the project in a local environment:
+For developers or contributors wishing to run, audit, or contribute to the frontend project in a local environment:
 
 ### 1. Clone the repository and navigate to the directory
 ```bash
@@ -130,9 +130,9 @@ npm run build
 
 ---
 
-## 🤝 Reflection and Craft Philosophy
+## 🤝 Project Philosophy
 
-> *"Building this platform was an exercise in restraint and reverence for detail. Rather than overwhelming visitors with loud commercial calls-to-action, we set out to create a digital sanctuary: breathing whitespace, measured typography, radical ingredient transparency, and clean, maintainable code paying tribute to the traditional apothecary."*
+> *"This project represents an exploration in modern frontend engineering, focusing on calm visual hierarchies, comfortable typography, and transparent ingredient presentation to create an approachable e-commerce experience."*
 
 ---
 <img width="1255" height="252" alt="Captura de pantalla 2026-09-16 123050" src="https://github.com/user-attachments/assets/decb0940-fe49-49d9-827e-80508e0c81d6" />
